@@ -1,0 +1,35 @@
+/////////////
+/////js//////
+/////////////
+
+
+(nums || [])
+左辺 || 右辺
+左辺がtrueなら左辺を実行
+左辺がfalseなら右辺を実行
+
+sort()
+文字列のsortは問題ないが
+数値のsortは引数に比較の式を入れる必要がある
+例)
+   arr = [1,34,64,34,675,657,4,]
+   arr.sort(function(a,b){
+     a-b
+   });
+
+連想配列のsort
+連想配列は厳密には配列でない。実際はオブジェクト。
+例) const = {
+              key:value
+              key:value
+              key:value
+              key:value
+              key:value
+            }
+keyを含んだ配列に変換する必要がある
+
+const = Object.keys(obj).map(function(k){
+  key: k, value: obj[k]
+});
+
+出力  [{key:value},{key:value},{key:value},{key:value}]

@@ -1,0 +1,29 @@
+class Solution{
+  public static String removeDuplicateWords(String s){
+      StringBuilder sb = new StringBuilder();
+      String[] split = s.split(" ");
+    
+      for(String str : split){
+        //arrayの要素数だけ処理を回す
+        //１回目はstrに"alpha"が格納
+        //２回目はstrに"beta"が格納
+          if (!sb.toString().contains(str)) {
+            //"alpha"がsbと一致していなければsbに"alpha"追加
+            //"beta"がsbと一致していなければsbに"beta"追加
+             sb.append(str).append(" ");
+          }
+      }
+    
+      return sb.toString().trim();
+  }
+}
+
+本日の学び
+
+重複を取り除く系の問題は"削除"を考えるのではなくて、
+新しく配列を格納する箱を用意しそこに一個ずつ追加していくイメージ
+
+javaの便利メソッドの一つにconrains があるのでそれを使って
+true,falseで判断する。
+
+用意した箱はStringBuider型で用意しておけばappendを使って文字の追加は可能である。

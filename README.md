@@ -1,3 +1,5 @@
-# codewars_practice
-#実行
-node ファイル名
+# javascript execution
+node (file name)
+
+# ruby execution
+ruby (file name)

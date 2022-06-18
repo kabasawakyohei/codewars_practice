@@ -20,3 +20,7 @@ def validate_usr(username)
 end
 
 p validate_usr('asddsa')
+
+
+
+p 'hoge'
